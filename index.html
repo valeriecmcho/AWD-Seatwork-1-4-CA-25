@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player Management</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    <div class="Leaderboard">
+        <h1>Leaderboard</h1>
+    </div>
+    <div class="container" id="inputContainer">
+        <h2>Player Management</h2>
+        <form id="playerForm">
+            <input type="text" id="name" placeholder="Player Name" required>
+            <input type="number" id="score" placeholder="Score" required>
+            <input type="number" id="level" placeholder="Level" required>
+            <button type="submit">Add Player</button>
+        </form>
+    </div>
+    
+    <div class="container" id="listContainer">
+        <h3>Player List</h3>
+        <!-- Sorting Dropdown -->
+        <div id="sortContainer">
+            <label for="sortOptions">Sort by:</label>
+            <select id="sortOptions">
+                <option value="name">Name</option>
+                <option value="score">Score</option>
+                <option value="level">Level</option>
+            </select>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Score</th>
+                    <th>Level</th>
+                </tr>
+            </thead>
+            <tbody id="playerList"></tbody>
+        </table>
+    </div>
+    
+    
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../img/LEADERBOARD.gif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.Leaderboard {
+    position: absolute;
+    top: 20px; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.Leaderboard h1 {
+    color: black;
+    display: inline-block;
+    padding: 10px;
+    font-size: 5rem;
+    font-family: 'Press Start 2P', cursive;
+    -webkit-text-stroke: 4px #ff66c4; /* Adding border directly to text */
+    text-shadow: 0 0 2px #ff66c4; /* Optional: Adding glow to enhance effect */
+}
+
+
+
+
+.main-container {
+    display: flex;
+    gap: 5rem;
+    max-width: 900px;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#listContainer, #inputContainer {
+    margin-left: 40px;
+    background-color: black; /* Deep Purple */
+    color: #8d00ff; /* White text for contrast */
+    border-radius: 10px;
+    padding: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    border: solid 9px #ff66c4;
+}
+
+
+#playerForm {
+    color: #8d00ff;
+}
+.container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #ff007f;
+}
+
+/* Styling for form inputs */
+input {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: 2px solid #8d00ff; /* Electric Purple Border */
+    border-radius: 5px;
+    background: #1a1a2e; /* Dark background */
+    color: #ffffff; /* White text */
+    font-weight: bold;
+    text-transform: uppercase;
+    outline: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glow effect on focus */
+input:focus {
+    box-shadow: 0 0 20px #8d00ff, 0 0 40px #8d00ff;
+}
+
+/* Placeholder text color */
+input::placeholder {
+    color: #ff007f; /* Neon Pink Placeholder */
+    opacity: 0.7;
+}
+
+/* Styling for submit button */
+button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #8d00ff; /* Electric Purple */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0 0 10px #ff007f; /* Neon Pink Glow */
+    transition: box-shadow 0.3s ease-in-out, background 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #ff007f; /* Neon Pink */
+    box-shadow: 0 0 20px #ff007f, 0 0 40px #ff007f;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #1a1a2e; /* Dark Background */
+    color: white;
+    box-shadow: 0 0 15px #8d00ff, 0 0 30px #8d00ff; /* Neon Purple Glow */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header */
+th {
+    padding: 15px;
+    border: 2px solid #8d00ff; /* Electric Purple Borders */
+    text-align: center;
+    background: #4a007f; /* Deep Purple */
+    color: #ff007f; /* Neon Pink Text */
+    text-transform: uppercase;
+    box-shadow: 0 0 10px #ff007f;
+}
+
+/* Table Rows */
+td {
+    padding: 15px;
+    border: 2px solid #8d00ff;
+    text-align: center;
+    background: rgba(72, 0, 127, 0.7); /* Semi-transparent Purple */
+    color: white;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Row Hover Effect */
+tr:hover td {
+    box-shadow: 0 0 15px #ff007f, 0 0 30px #ff007f;
+    background: rgba(72, 0, 127, 0.9);
+}
+
+/* Add glow to the player list dynamically */
+#playerList tr {
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* When a new player is added, give it a glow effect */
+#playerList tr:hover {
+    box-shadow: 0 0 20px #8d00ff, 0 0 40px #ff007f;
+}
+
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
